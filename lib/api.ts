@@ -1,4 +1,5 @@
-const BACKEND_URL = "http://127.0.0.1:8000"
+//const BACKEND_URL = "http://127.0.0.1:8000"
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL
 
 // ── Auth ──────────────────────────────────────────────
 export async function registerUser(name: string, email: string, password: string) {
